@@ -2,15 +2,19 @@ body{
     background-color: rgb(182, 225, 65);
 }
 
-#gridcontainer{
+.gridcontainer{ 
     display: grid;
     grid-template-areas: 
     
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
 
-    'header header header header header'
+
+   /* 'header header header header header'
     'menu main main right right'
     'menu footer footer footer footer '  ;
-    
+   */ 
 
 }
 
@@ -22,7 +26,7 @@ div{
 #item1{
     grid-area: header;
     height: 50px;
-    width: 1110px;
+    width: 1170px;
     padding: 20px;
     margin: 20px;
     color: black;

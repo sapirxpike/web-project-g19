@@ -1,0 +1,334 @@
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px;
+    
+  }
+
+  body{
+    
+    border-style: solid;
+    border-color: rgb(15, 3, 3);
+
+  }
+  
+.grid-container {
+    justify-content: center;
+     align-items: center;
+    /*
+    border-radius: 8px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgb(15, 3, 3);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 80vw;
+    height: 15vh;
+    background-color:white;
+*/
+align-self: center;
+
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(4, 1fr);
+
+border: none;
+background-color: inherit;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+display: grid;
+
+grid-template-areas:
+
+  'header header header header header'
+    'menu main main right right'
+    'menu main main right right'
+    'footer footer footer footer footer ' 
+     ;
+   
+
+
+
+
+  }
+  .grid-container-up {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .grid-item-1{ 
+    justify-content: center;
+    align-items: center;
+      /*
+    border-radius: 8px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    animation-name: grid-item;
+    animation-direction: reverse;
+    animation-timing-function: steps(5, end);
+    animation-duration: 4s;
+    margin-bottom: 5px;
+*/
+
+border-radius: 8px;
+    color: green;
+
+    row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+}
+
+
+.grid-item-1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.grid-item-2{ 
+    /* border-radius: 8px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+    background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    animation-name: grid-item;
+    animation-duration: 4s;
+    margin-bottom: 5px;
+*/
+border-radius: 8px;
+
+    color: green;
+    row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+}
+
+
+.grid-item-2:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.grid-item-3{ 
+   /* border-radius: 8px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+    background-color: blue;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    animation-name: grid-item;
+    animation-duration: 4s;
+    margin-bottom: 5px;
+*/
+border-radius: 8px;
+
+    color: green;
+    row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+}
+
+.grid-item-3:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.grid-item-4{ 
+   /* border-radius: 8px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+    background-color: blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    animation-name: grid-item;
+    animation-duration: 4s;
+    margin-bottom: 5px;
+}
+    */
+
+    border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+    }
+
+    .grid-item-4:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+    
+
+  /* .grid-item-5{ 
+     border-radius: 8px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+    background-color: blue;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    animation-name: grid-item;
+    animation-duration: 4s;
+    margin-bottom: 5px;
+  }
+    */
+  
+    
+      
+    
+    
+    /* Green */
+    .grid-item-5{
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+    }
+
+    .grid-item-5:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+    
+  
+
+.grid-container-down {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+      }
+    
+
+    .grid-item-down-1{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+
+
+    }
+
+    .grid-item-down-1:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+
+    
+    .grid-item-down-2{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;  
+
+
+    }
+
+    .grid-item-down-2:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+
+    
+    .grid-item-down-3{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+
+
+    }
+
+    .grid-item-down-3:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+
+    
+    .grid-item-down-4{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+
+
+    }
+
+    .grid-item-down-4:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
