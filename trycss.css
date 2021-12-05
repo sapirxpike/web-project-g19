@@ -7,7 +7,7 @@
   }
 
   body{
-    
+    background-color: tomato;
     border-style: solid;
     border-color: rgb(15, 3, 3);
 
@@ -218,62 +218,20 @@ border-radius: 8px;
         box-sizing: border-box;
         padding: 0;
          margin: 10px;
-        grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 2;
-        grid-area: menu;
         display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
+        
         
     
       }
 
 
       .grid-second-item-1{
-        grid-row-start: 2;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-
-        border-radius: 8px;
-
-        color: green;
-        row-gap: 10px;
-        width: 10vw;
-         height: 15vh;
-         display: flex;
-         justify-content: center;
-        align-items: center;
-
-
-    }
-
-    
-    .grid-second-item-2{
-        grid-row-start: 2;
-        grid-row-end: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-
-        border-radius: 8px;
-
-        color: green;
-        row-gap: 10px;
-        width: 10vw;
-         height: 15vh;
-         display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-
-    }
-
-
-    
-    .grid-second-item-3{
         grid-row-start: 2;
         grid-row-end: 2;
         grid-column-start: 3;
@@ -285,9 +243,45 @@ border-radius: 8px;
         row-gap: 10px;
         width: 10vw;
          height: 15vh;
-         display: flex;
-        justify-content: center;
-        align-items: center;
+         
+
+
+    }
+
+    
+    .grid-second-item-2{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 5;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+        width: 10vw;
+         height: 15vh;
+      
+
+
+
+    }
+
+
+    
+    .grid-second-item-3{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 5;
+        grid-column-end: 6;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+        width: 10vw;
+         height: 15vh;
+
 
 
 
@@ -295,11 +289,75 @@ border-radius: 8px;
 
 
 
+
+
+    .grid-goals {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-area: footer;
+       
+
+    
+      }
+
+
+      .grid-goal-1{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+
+
+    }
+
+
+    .grid-goal-2{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+
+
+    }
+
+    
+    .grid-goal-3{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        border-radius: 8px;
+
+        color: green;
+        row-gap: 10px;
+    width: 10vw;
+    height: 15vh;
+
+
+    }
+
 .grid-container-down {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
         grid-area: footer;
         display: flex;
         justify-content: center;
@@ -310,8 +368,8 @@ border-radius: 8px;
     
 
     .grid-item-down-1{
-        grid-row-start: 4;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
         grid-column-start: 1;
         grid-column-end: 2;
 
@@ -333,8 +391,8 @@ border-radius: 8px;
 
     
     .grid-item-down-2{
-        grid-row-start: 4;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
         grid-column-start: 2;
         grid-column-end: 3;
 
@@ -356,8 +414,8 @@ border-radius: 8px;
 
     
     .grid-item-down-3{
-        grid-row-start: 4;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
         grid-column-start: 3;
         grid-column-end: 4;
 
@@ -379,8 +437,8 @@ border-radius: 8px;
 
     
     .grid-item-down-4{
-        grid-row-start: 4;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
         grid-column-start: 4;
         grid-column-end: 5;
 
@@ -397,4 +455,11 @@ border-radius: 8px;
     .grid-item-down-4:hover {
         background-color: #04AA6D;
         color: white;
+    }
+
+
+    .package{
+        display: inline;
+        width: 7vw;
+    height: 10vh;
     }
