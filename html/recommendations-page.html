@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/recommendations.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
     <title>FoodWorld</title>
 </head>
 <body>
-    <main>
-        
-    </main>
+        <header class="fw-header">
+            <div class="fw-toolbar">
+                <div class="fw-nav-left">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                </div>
+                <div class="fw-nav-center">
+                    <img id="logo" src="/imgs-project/fw-logo.png" alt="fw-logo">
+                </div>
+                <div class="fw-nav-right">
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+            <nav class="fw-nav">
+                    <a href="../index.html" class="fw-btn nav-btn">Home</a>
+                    <a href="https://google.com" class="fw-btn nav-btn">FoodWorld</a>
+                    <a href="https://google.com" class="fw-btn nav-btn">Gift Cards</a>
+                    <a href="./html/recommendations-page.html" class="fw-btn nav-btn">Recommendations</a>
+                    <a href="https://google.com" class="fw-btn nav-btn">About Us</a>
+            </nav>
+        </header>
+
+        <main class="fw-main">
+            <h1 id="fw-main-title">Top Recommendations</h1>
+            <div class="fw-recommendation-container">
+                
+            </div>
+        </main>
+
+        <footer>
+            <p>Food World © 2021 |</p>
+            <a href="">news letter |</a>
+            <a href="">qustions & answers |</a>
+            <a href="">policy |</a>
+            <a href="">customer service |</a>
+        </footer>
+
+        <script defer src="../db/recommendations.js"></script>
+        <script defer src="../js/main.js"></script>
 </body>
 </html>
