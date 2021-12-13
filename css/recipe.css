@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: sandybrown;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+
+
+.search-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: Copperplate;
+    width: 100%;
+    height: 20vh;
+    margin-top: 1px;
+    background-color:  rgb(100, 150, 226);
+}
+
+
+.search-select select{
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+    /* reset */
+  
+    margin: 0.5vw;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.search-select label{
+    font-size: large;
+}
+
+.search-select input{
+
+    background-color: black;
+    color: azure;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    cursor: pointer;
+    line-height: 1.5em;
+    padding: 0.5em 1em 0.5em 1em; 
+}
+
+.search-select input:hover {
+    background:#615e66;
+    color:#fff;
+    border:1pxsolid#eee;
+    border-radius:4px;
+    box-shadow:5px5px5px#eee;
+    text-shadow:none;
+}
+
+
+
+
+.recipe_instruction {
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+}
+
+.recipe_instruction_title{
+    color: rebeccapurple;
+    display: block;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+
+.recipe_instruction ul{
+    
+    
+    display: inline-flex;
+    list-style: none;
+    align-self: center;
+    align-items: flex-end;
+
+}
+
+.recipe_instruction li{
+    background-color: sandybrown;
+    border: 10px solid gold ; 
+    border-width: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+.recipe_instruction li img {
+
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    align-items: center;
+}
+
+
+
+.reccomandation-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: Copperplate;
+    width: 100%;
+    height: 20vh;
+    margin-top: 1px;
+    background-color:  rgb(100, 150, 226);
+}
+
+
+.reccomandation_select select{
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+    /* reset */
+  
+    margin: 0.5vw;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.reccomandation_select label{
+    font-size: large;
+}
+
+.reccomandation_select input{
+
+    background-color: black;
+    color: azure;
+    display: inline-block;
+    font: inherit;
+    cursor: pointer;
+    line-height: 1.5em;
+    padding: 0.5em 1em 0.5em 1em; 
+}
+
+.reccomandation_select input:hover {
+    background:#615e66;
+    color:#fff;
+    border:1pxsolid#eee;
+    border-radius:4px;
+    box-shadow:5px5px5px#eee;
+    text-shadow:none;
+}

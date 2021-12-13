@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/countriesCSS.css">
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/countries.js"></script>
+    <link rel="stylesheet" href="css/countriesCSS.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
 
     <title>Food Area</title>
 </head>
 <body>
     <!--container for the upper choices -->
 
-    <div class="upper_choices">
-        <ul>
+    <header class="fw-header">
+        <div class="fw-toolbar">
+            <div class="fw-nav-left">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="fw-nav-center">
+                <img id="logo" src="imgs-project/fw-logo.png" alt="fw-logo">
+            </div>
+            <div class="fw-nav-right">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+        <nav class="fw-nav">
+            <a href="index.html" class="fw-btn nav-btn">Home</a>
+            <a href="food_world.html" class="fw-btn nav-btn">FoodWorld</a>
+            <a href="GiftCards.html" class="fw-btn nav-btn">Gift Cards</a>
+            <a href="recommendation_page.html" class="fw-btn nav-btn">Recommendations</a>
+            <a href="about_us.html" class="fw-btn nav-btn">About Us</a>
+        </nav>
+    </header>
 
-            <li>
-                <a href="../web-project-g19/HomePageNew.html"><img class="grid_upper" id="openbtn_img" src="imgs-new/homepageicon.jpg"></a><a href="../web-project-g19/HomePageNew.html">Home</a>
-            </li>
-            <li>
-                <a href="Country-page.html"><img class="grid_upper" id="icecreamBtn_img" src="imgs-new/foodarea.jpg"></a><a href="Country-page.html">Food Area</a>
-            </li>
-            <li>
-                <a href=""><img class="grid_upper" id="Glidali_Story_img"  src="imgs-new/aboutus2.png"></a><a href="">About us</a>
-            </li>
-    
-            <li>
-                <a href="GiftCard-Page.html"><img class="grid_upper" id="newMembertn_img"  src="imgs-new/gift_card_icon.png">Gift Card</a>
-            </li>
-           
-            <li>
-                <a href=""><img class="grid_upper" id="shoppingCartbtn_img" src="imgs-new/shopingcart.png"></a><a href="">My Cart</a>
-            </li>
-        
-            <li>
-                <a href=""><img class="grid_upper" id="icecreamBtn_img" src="imgs-new/reccomandation.png    "></a><a href="">Recommendation</a>
-            </li> 
-            
-        </ul>
-    </div>
+
+
+
 
 <div class="logo">
     <p><img src="imgs-project/logoV2.png" alt=""> &nbsp;| FOODWORLD</p> 
@@ -321,14 +325,14 @@
     <div>
         <table>
             <tr class="first_row">
-                <td> <p>Israel</p></td>
-                <td>Brazil</td>
-                <td>Japan</td>
+                <td> <a href="./recipe_page.html?country=israel"> Israel</a></td>
+                <td><a href="./recipe_page.html?country=brazil">Brazil</a></td>
+                <td><a href="./recipe_page.html?country=japan">Japan</a></td>
               </tr>
               <tr class="second_row">
-                <td>Italy</td>
-                <td>Thailand</td>
-                <td>Mexico</td>
+                <td><a href="./recipe_page.html?country=italy">Italy</a></td>
+                <td><a href="./recipe_page.html?country=thailand">Thailand</a></td>
+                <td><a href="./recipe_page.html?country=mexico">Mexico</a></td>
               </tr>
         </table>
     </div> 
@@ -354,27 +358,14 @@
 
 </div>
 
-<div class="footer-bar">
-    <ul>
+<footer class="fw-footer">
+    <span>Food World © 2021 |&nbsp;</span>
+    <a href=""> &nbsp;<img src="icons/white_newsletter.png"><b> Newsletter| </b>  </a>
+    <a href=""> &nbsp;<img src="icons/qustion_mark_white.png"> <b>Q&A |</b> </a>
+    <a href=""> &nbsp;<img src="icons/white_gavel.png"> <b>Policy |</b> </a>
+    <a href=""> &nbsp;<img src="icons/white_support.png"> <b>Customer Service |</b> </a>
+</footer>
 
-        <li>
-            <a href=""><img class="grid_footer" id="openbtn_img" src="icons/call_center.png"></a><a href="">Customer Service</a>
-        </li>
-        <li>
-            <a href=""><img class="grid_footer" id="icecreamBtn_img" src="icons/reg_icon.png"></a><a href="">Regulations</a>
-        </li>
-        <li>
-            <a href=""><img class="grid_footer" id="Glidali_Story_img" class="Glidali_Story_img" src="icons/q_mark_icon.png"></a><a href="">FAQ</a>
-        </li>
-        <li>
-            <a href=""><img class="grid_footer" id="newMembertn_img" class="newMembertn_img" src="icons/newsletter_icon.png"></a><a href="">Newsletter</a>
-        </li>
-        <li>
-            <a href=""><img class="grid_footer" id="phonebtn_img" src="icons/phone_icon.png"></a><a href="">Contact us</a>
-        </li>
-       
-    </ul>
-</div>
 
 </body>
 </html>

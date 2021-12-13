@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/newHome.css">
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/countriesCSS.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--<link rel="stylesheet" href="css/main.css"> -->
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <title>Recipe Page</title>
+</head>
+<body>
+
+        
+ <!--container for the upper choices -->
+
+ <header class="fw-header">
+    <div class="fw-toolbar">
+        <div class="fw-nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+        <div class="fw-nav-center">
+            <img id="logo" src="imgs-project/fw-logo.png" alt="fw-logo">
+        </div>
+        <div class="fw-nav-right">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <nav class="fw-nav">
+        <a href="index.html" class="fw-btn nav-btn">Home</a>
+        <a href="food_world.html" class="fw-btn nav-btn">FoodWorld</a>
+        <a href="GiftCards.html" class="fw-btn nav-btn">Gift Cards</a>
+        <a href="recommendation_page.html" class="fw-btn nav-btn">Recommendations</a>
+        <a href="about_us.html" class="fw-btn nav-btn">About Us</a>
+    </nav>
+</header>
+
+     <!--headline -->
+
+     <div class="recipe_instruction">
+        <div class="recipe_instruction_title">   <h1>Recipe name </h1>  </div> 
+          <div>
+           <ul>
+            <li>
+                <h3 id="fw-recpie-title"></h3>
+                <div class="fw-recpie-ingredients">
+                    <ul class="fw-recpie-ingredients-list">
+                        
+
+                    </ul>
+                </div>
+
+
+                <div class="recipe_instruction">
+                       <ul>
+                        <li>
+                            <span>
+                          <p> <b> Food ingredients</b></p> <img src="imgs-project/burritoing.png">
+                            </span>
+                        </li>
+                      <li>
+                          <span> <b>Preperation</b>  <br>  1. Prep Time: 15 min <br> 2. Cook Time: 45 min <br> 3. Total Time: 1 hour 
+                            
+                            
+                           
+                          </span>
+                      </li>
+                      <li>
+                          <span> <b>how to make - 3 stages  </b> <br>  
+                            <b> STEP 1</b> <br>
+                             Heat the oil in a large pan – a casserole is ideal. Fry the onions for 8 mins, then add the garlic, spices and oregano and cook for 1 min. Crumble over the mince and sizzle for 5 mins, stirring, until browned. Stir in the sugar and leave for a minute, then splash in the vinegar and pour in the tomatoes.
+                             <br> 
+                              <b>STEP 2</b>  <br>
+                             Simmer for 5 mins then tip in the beans and the water from the can. Season, stir and simmer everything for 20 mins until the beef is in a thick gravy. The sauce can be prepared up to 2 days ahead, chilled and reheated with a splash of water or frozen for 6 months. 
+                             <br> 
+                             <b> STEP 3 </b> <br>
+                             To make the burritos, heat the tortillas following pack instructions. Pile some rice and beef sauce along each tortilla and scatter over your choice of topping. Fold over the ends and roll up to seal. Secure by wrapping with foil if you want. Eat immediately.
+                             
+                          </span>
+                      </li>
+              
+                      
+
+                      </ul>
+
+                      <div class="reccomandation_select">
+       
+                        <label for="food_cato"> <b> Please give Rank for the recipe: </b> </label>
+                        <select id="food_cato">
+                           <option value="Meat">10 - very good</option>
+                           <option value="Meat">9</option>
+                           <option value="Soup">8</option>
+                           <option value="Breakfast">7</option>
+                           <option value="Beverages">6</option>
+                           <option value="Lunch">5</option>
+                           <option value="Dinner">4</option>
+                           <option value="Vegetarian">3</option>
+                           <option value="Desserts">2</option>
+                           <option value="Breads">1 - very bad</option>
+                           
+                        </select>
+                        </div>
+
+
+                   
+                  </div>
+         
+  
+     
+
+
+
+
+
+        <form>
+            <textarea></textarea>
+        </form>
+    
+   
+        <input type="submit" value="submit">
+   </div>
+
+
+
+
+
+
+
+
+
+
+     
+   <footer class="fw-footer">
+    <span>Food World © 2021 |&nbsp;</span>
+    <a href=""> &nbsp;<img src="icons/white_newsletter.png"><b> Newsletter| </b>  </a>
+    <a href=""> &nbsp;<img src="icons/qustion_mark_white.png"> <b>Q&A |</b> </a>
+    <a href=""> &nbsp;<img src="icons/white_gavel.png"> <b>Policy |</b> </a>
+    <a href=""> &nbsp;<img src="icons/white_support.png"> <b>Customer Service |</b> </a>
+</footer>
+
+    <script defer src="../db/recommendations.js"></script>
+    <script defer src="../js/main.js"></script>
+    <script src="JS/recpies.js"></script>
+
+</body>
+</html>
+
+
+
