@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+header a {
+    margin: 0px 15px;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 .container_about_1 {
     display: flex;
     justify-content: center;
