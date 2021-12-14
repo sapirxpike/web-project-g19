@@ -28,5 +28,12 @@ var recommendations = [
         "country" : "Greek",
         "type": "Vegan",
         "Recommendation": "lorem impsuom blablabla"
+    },
+    
+    {
+        "country" : "Greek",
+        "type": "Vegan",
+        "Recommendation": "lorem impsuom blablabla"
     }
+
 ];
