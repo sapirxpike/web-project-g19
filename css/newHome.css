@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: wheat;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -145,8 +145,19 @@ nav .fw-btn {
     width: 100%;
     height: 14vh;
     margin-top: 2px;
-    background-color: rgb(100, 150, 226);
+    background-color: #36485a;
 }
+
+
+@keyframes blinking {
+    from { 
+        color: wheat;
+    }
+    to {
+        color: gold;
+    }
+}
+
 
 .container3 {
     display: flex;
@@ -155,7 +166,7 @@ nav .fw-btn {
     position: relative;
     width: 100%;
     height:12vh ;
-    margin-top: 2px;
+   
     background: #36485a;
 }
 
@@ -170,6 +181,9 @@ nav .fw-btn {
     text-shadow: 10px 10px 10px white;
     font-size: 400%;
     width: 100%;
+    animation-name : blinking ;
+    animation-duration: 1s;
+    animation-iteration-count: 10;
 }
 
 
@@ -245,7 +259,7 @@ nav .fw-btn {
 
 /*------css for how does its work----------*/
 .how{
-    background-color: #67727e;
+    background-color: wheat;
     text-align: center;
     display: inline-block;
     justify-content: center;

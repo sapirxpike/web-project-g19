@@ -1,15 +1,18 @@
 
 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+
 header a {
     margin: 0px 15px;
     font-size: 28px;
-    color: white;
+    color: wheat;
     text-decoration: none;
     cursor: pointer;
 }
@@ -28,7 +31,7 @@ header a {
 
 
 .text_about_1 {
-    color: blue;
+    color: black;
     font-weight: 400;
     letter-spacing: 5px;
     position: relative;
@@ -36,7 +39,20 @@ header a {
     font-family: Copperplate;
     text-shadow: 10px 20px 10px rgb(0, 255, 255);
     font-size: 350%;
+    animation-name : blinking ;
+    animation-duration: 1s;
+    animation-iteration-count: 10;
     
+}
+
+
+@keyframes blinking {
+    from { 
+        color: wheat;
+    }
+    to {
+        color: gold;
+    }
 }
 
 .container_about_2{
