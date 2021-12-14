@@ -47,7 +47,7 @@
                 <img class="card-img-top" src="imgs-project/honey_chicken_breast.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Tamarind-Honey Chicken Breasts</h5>
-                  <p class="card-text">with Carrots & Mashed Potatoes, 1 Serving: 20$</p>
+                  <p class="card-text">with Carrots & Mashed Potatoes, 1 Serving: <span id="fw-recpie-price">20</span>$</p>
                   
                   <button type="button" class="btn btn-danger">Remove</button>
                   <button type="button" class="btn btn-success">Add to GiftCard</button>
@@ -80,7 +80,7 @@
                 <img class="card-img-top" src="imgs-project/egg_cheddar_burger.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Fried Egg & White Cheddar Burgers</h5>
-                  <p class="card-text">with Roasted Fingerling Potatoes, 1 Serving: 15$</p>
+                  <p class="card-text">with Roasted Fingerling Potatoes, 1 Serving: <span>15$</span></p>
                   
                   <button type="button" class="btn btn-danger">Remove</button>
                   <button type="button" class="btn btn-success">Add to GiftCard</button>
@@ -91,7 +91,7 @@
                 <img class="card-img-top" src="imgs-project/zattar_white_beans.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Za’atar White Bean & Rice Bowls</h5>
-                  <p class="card-text">with Carrots, Sweet Peppers & Marinated Feta, 1 Serving: 12$</p>
+                  <p class="card-text">with Carrots, Sweet Peppers & Marinated Feta, 1 Serving: <span>12$</span></p>
                   
                   <button type="button" class="btn btn-danger">Remove</button>
                   <button type="button" class="btn btn-success">Add to GiftCard</button>
@@ -120,14 +120,14 @@
             </div>
             <div class="card-body">
                 <div class="input-group">
-                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" value="0" id="totalPriceText">
                     <div class="input-group-append">
                       <span class="input-group-text">$</span>
                       
                     </div>
                 </div>
                 <br>
-                <button type="button" value="0" class="btn btn-primary">Order Now</button>  
+                <button type="button" class="btn btn-primary">Order Now</button>  
             </div>
             <div class="card-footer text-muted">
               Eat Healthy!
