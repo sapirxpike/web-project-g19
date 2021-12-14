@@ -1,6 +1,6 @@
-let recpies = { israel: { name: "Hummus", ingredients: ["Chickpeas","Garlic","Kosher Salt","Garnish","Tahini"], srcImg: "imgs-project/hummus.jpeg"  }, 
-usa: { name: "Burger", ingredients: ["1 pound ground lean beef","1 large egg","half cup minced onion","1 tablespoon Worcestershire","1 or 2 cloves garlic, peeled and minced","tomato", "red onion"], srcImg: "imgs-project/american_burger.jpeg" }, 
-japan: { name: "Sushi",ingredients: ["sushi rice","a bamboo mat","low-sodium soy sauce","toasted sesame seeds","wasabi","pickled ginger", "nori"," chia seeds"], srcImg: "imgs-project/sushi_japan.jpeg" } };
+let recpies = { israel: { name: "Hummus", ingredients: ["Chickpeas","Garlic","Kosher Salt","Garnish","Tahini"], srcImg: "../imgs-project/hummus.jpeg"  }, 
+usa: { name: "Burger", ingredients: ["1 pound ground lean beef","1 large egg","half cup minced onion","1 tablespoon Worcestershire","1 or 2 cloves garlic, peeled and minced","tomato", "red onion"], srcImg: "../imgs-project/american_burger.jpeg" }, 
+japan: { name: "Sushi",ingredients: ["sushi rice","a bamboo mat","low-sodium soy sauce","toasted sesame seeds","wasabi","pickled ginger", "nori"," chia seeds"], srcImg: "../imgs-project/sushi_japan.jpeg" } };
 
 
 function getIngredients(recpie){
