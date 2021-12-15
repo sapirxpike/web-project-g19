@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="cssmain.css"> -->
+   
     <link rel="stylesheet" href="../css/recipe.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
                 <img id="logo" src="../imgs-project/fw-logo.png" alt="fw-logo">
             </div>
             <div class="fw-nav-right">
-                <i class="fas fa-user"></i>
+                <a href="login.html" class="fas fa-user"></a>
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
@@ -63,7 +63,7 @@
     </div>
                   
     <div class="fw-center-form">
-        <form  class="review" style="width: 33%;">
+        <form  class="review" style="width: 33%;" action="../html/index.html">
             <h2>Please write what you think:</h2>
             <br>
             <div class="form-group">
@@ -93,24 +93,6 @@
             <button onclick="done()"  class="btn btn-primary">Submit</button>
         </form>
     </div>
-    
-    <p id="inner"></p>
-    <script>
-        function done(){
-            
-            var userName = document.getElementById("fw-user-review");
-            let name = userName.value;
-            let rating = document.getElementById("exampleFormControlSelect1").value;
-            let review = document.getElementById("exampleFormControlTextarea1").value;
-            console.log(name, rating);
-            console.log(review);
-            alert("Thank you");
-        }
-        
-    </script>
-
-
-
 
     <footer class="fw-footer">
         <span>Food World © 2021 |&nbsp;</span>

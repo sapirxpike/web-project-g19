@@ -49,3 +49,21 @@ function getRecpieImg(){
 }
 
 getRecpieImg()
+
+var recommendationsv2 = []
+
+function done(){ //this function will get the data the review of the user and store it the db
+            
+    var userName = document.getElementById("fw-user-review");
+    let name = userName.value;
+    let country = url.searchParams.get("country");
+    let rating = document.getElementById("exampleFormControlSelect1").value;
+    let review = document.getElementById("exampleFormControlTextarea1").value;
+    recommendationsv2.push({
+        "country" : Country,
+        "name": name,
+        "Recommendation": review
+    })
+    console.log(recommendationsv2)
+    alert("thanks")
+}

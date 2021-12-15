@@ -37,6 +37,14 @@ header i {
     font-size: 28px;
     color: white;
 }
+header a {
+    margin: 0px 15px;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 #logo {
     width: 82px;
@@ -217,7 +225,6 @@ footer {
 
 .fw-recpie-ingredients ul{
     font-size: x-large;
-    
 }
 
 

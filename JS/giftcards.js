@@ -1,36 +1,21 @@
-function increaseValue() {
-    var value = parseInt(document.getElementById(quantity1).value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById(quantity1).value = value;
-    updateTotalPrice(totalPrice, price, sign);
-    updateCartItems(brand, value, OneOrHalf);
-}
-
-
-function increaseValue() {
-    let totalPrice = document.getElementById("totalPriceText");
-    let recpiePrice = d
-
-    var value = parseInt(document.getElementById(quantity1).value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById(quantity1).value = value;
-    updateTotalPrice(totalPrice, price, sign);
-    updateCartItems(brand, value, OneOrHalf);
-}
-
-
-
-function updateTotalPrice(totalPrice, price, sign) {
+function increaseTotalPrice(totalPrice, recipePrice) {
     var value = parseInt(document.getElementById(totalPrice).value, 10);
-    if (sign == '-')
-        value = value - price;
-    else {
-        value = value + price;
-    }
-    if (value <= 0)
-        document.getElementById(totalPrice).value = 0;
-    else
-        document.getElementById(totalPrice).value = value;
+    let Price = recipePrice;
+    Price = isNaN(Price) ? 0 : Price;    
+    document.getElementById(totalPrice).value = value + Price
 } 
+
+function decreaseTotalPrice(totalPrice, recipePrice) {
+    var value = parseInt(document.getElementById(totalPrice).value, 10);
+    let Price = recipePrice;
+    Price = isNaN(Price) ? 0 : Price;
+    var newTotal = value - Price;
+    if (newTotal <= 0)
+        document.getElementById(totalPrice).value = 0;
+    else    
+        document.getElementById(totalPrice).value = newTotal;
+} 
+
+function orderGiftCard(){
+    alert("Thank You");
+}
