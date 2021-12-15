@@ -2,6 +2,10 @@
 // We read the data from the db javascript files and load them in html files.
 
 function getRecommendations() {
+  let recommendations = JSON.parse(window.localStorage.getItem("recommendations") || "[]");
+  if (recommendations.length == 0){
+    return true;
+  }
     let htmlCards = ''
     let recommendationsContainer = document.querySelector('.fw-recommendation-container');
     recommendations.forEach( (recommendtion) => {
@@ -11,7 +15,8 @@ function getRecommendations() {
         <div class="fw-card-container">
           <h4><b>${recommendtion.country}</b></h4>
           <h5>${recommendtion.name}</h5>
-          <p>${recommendtion.Recommendation}</p>
+          <h5>${recommendtion.rating}</h5>
+          <p>${recommendtion.recommendation}</p>
         </div>
       </div>`
     });

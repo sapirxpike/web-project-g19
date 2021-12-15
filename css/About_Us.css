@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 
-
+body{
+    background-color: white;
+}
 
 header a {
     margin: 0px 15px;
@@ -26,7 +28,7 @@ header a {
     width: 100%;
     height:12vh ;
     margin-top: 2px;
-    background: bisque;
+    background: white;
 }
 
 
@@ -66,7 +68,7 @@ header a {
     width: 100%;
     height:9vh ;
     margin-top: 10vh;
-    background: bisque;
+    background: white;
 }
 
 

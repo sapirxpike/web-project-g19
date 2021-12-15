@@ -344,6 +344,43 @@ nav .fw-btn {
 
 
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-top: 1px;
+    background-color: aliceblue;
+}
+
+.logo img{
+    margin-top: 1vw;
+    height: 9vw;
+    width: 9vw;
+    
+}
+
+.logo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 8px;
+    background: transparent;
+    position: center;
+    text-align: center;
+    font-family: Copperplate;
+    font-size: 400%;
+    width: 100%;
+    animation-name : blinking ;
+    animation-duration: 1s;
+    animation-iteration-count: 10;
+}
+
+
 
 
 

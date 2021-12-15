@@ -1,7 +1,16 @@
 let recpies = { israel: { name: "Hummus", ingredients: ["Chickpeas","Garlic","Kosher Salt","Garnish","Tahini"], srcImg: "../imgs-project/hummus.jpeg"  }, 
 usa: { name: "Burger", ingredients: ["1 pound ground lean beef","1 large egg","half cup minced onion","1 tablespoon Worcestershire","1 or 2 cloves garlic, peeled and minced","tomato", "red onion"], srcImg: "../imgs-project/american_burger.jpeg" }, 
-japan: { name: "Sushi",ingredients: ["sushi rice","a bamboo mat","low-sodium soy sauce","toasted sesame seeds","wasabi","pickled ginger", "nori"," chia seeds"], srcImg: "../imgs-project/sushi_japan.jpeg" } };
+japan: { name: "Sushi",ingredients: ["sushi rice","a bamboo mat","low-sodium soy sauce","toasted sesame seeds","wasabi","pickled ginger", "nori"," chia seeds"], srcImg: "../imgs-project/sushi_japan.jpeg" },
+mexico: { name: "Burrito", ingredients: ["Beef Burrito Filling","Cheese","Diced tomato","Coriander/cilantro","Black beans","Corn"], srcImg: "../imgs-project/burrito4.jpeg"} , 
+thailand: { name: "Padthai", ingredients: ["2 Tbsp coconut or avocado oil","Thai Basil and Holy Basil"," Sticky Rice","Coriander/cilantro","Palm Sugar","Corn","Mofongo"], srcImg: "../imgs-project/padthai3.jpeg" }, 
+india: { name: "chutney", ingredients: ["2 cups fresh cilantro","stems","2 green chilies","half inch fresh ginger","tsp lime juice","chaat masala"], srcImg: "../imgs-project/indian.jpeg" }, 
 
+};
+
+
+
+let url = new URL(window.location.href);
+let country = url.searchParams.get("country");
 
 function getIngredients(recpie){
     console.log(recpie.ingredients)
@@ -16,8 +25,6 @@ function getIngredients(recpie){
 
 
 function getRecpies() {
-    let url = new URL(window.location.href);
-    let country = url.searchParams.get("country");
     let recpie = recpies[country];
     let titleElm = document.getElementById("fw-recpie-title");
     titleElm.innerHTML = recpie.name;
@@ -28,20 +35,9 @@ function getRecpies() {
 
 getRecpies()
 
-function getCountry(){
-    let url = new URL(window.location.href);
-    let country = url.searchParams.get("country");
-    let country2 = country.charAt(0).toUpperCase() + country.slice(1);
-    let countryTitle = document.getElementById("fw-country-name");
-    countryTitle.innerHTML = country2;
-}
-
-getCountry()
 
 
 function getRecpieImg(){
-    let url = new URL(window.location.href);
-    let country = url.searchParams.get("country");
     let source = recpies[country].srcImg;
     console.log(source);
     let srcChange = document.getElementById("fw-recpie-img-in");
@@ -50,20 +46,22 @@ function getRecpieImg(){
 
 getRecpieImg()
 
-var recommendationsv2 = []
 
 function done(){ //this function will get the data the review of the user and store it the db
-            
-    var userName = document.getElementById("fw-user-review");
-    let name = userName.value;
-    let country = url.searchParams.get("country");
+    let recommendations = JSON.parse(window.localStorage.getItem("recommendations") || "[]");
+    //let name = userName.value;
+    let name = document.getElementById("fw-user-review").value;
     let rating = document.getElementById("exampleFormControlSelect1").value;
     let review = document.getElementById("exampleFormControlTextarea1").value;
-    recommendationsv2.push({
-        "country" : Country,
+    recommendations.push({
+        "country" : country,
         "name": name,
-        "Recommendation": review
+        "recommendation": review,
+        "rating" : rating
     })
-    console.log(recommendationsv2)
+    console.log(recommendations)
+    window.localStorage.setItem('recommendations', JSON.stringify(recommendations));
     alert("thanks")
 }
+
+
