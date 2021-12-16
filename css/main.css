@@ -174,7 +174,6 @@ nav .fw-btn {
     background-color: rgb(255, 47, 144);
 }
 
-
 /*-taken from internet rotating imgs--*/
 .Rotating_imgs {
     float: center;
@@ -266,7 +265,6 @@ nav .fw-btn {
 
 /*-----goals css----------*/
 
-
 .goal {
     
     background-color: white;
@@ -286,15 +284,11 @@ nav .fw-btn {
     margin-bottom: 20px;
 }
 
-
 .goal ul{
-    
-    
     display: inline-flex;
     list-style: none;
     align-self: center;
     align-items: flex-end;
-
 }
 
 .goal li{
@@ -303,12 +297,9 @@ nav .fw-btn {
     border-width: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    
 }
 
-
 .goal li img {
-
     width: 100px;
     height: 100px;
     margin: 50px;

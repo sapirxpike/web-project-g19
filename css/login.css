@@ -51,7 +51,6 @@ header a {
     cursor: pointer;
 }
 
-
 #logo {
     width: 82px;
 }
@@ -121,10 +120,6 @@ nav .fw-btn {
         border-bottom: 4px solid white;
 }
 /* ----------------------------------- */
-
-
-
-
 footer {
     height: 8vh;
     display: flex;

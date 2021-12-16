@@ -38,7 +38,6 @@ header a {
     cursor: pointer;
 }
 
-
 #logo {
     width: 82px;
 }
@@ -175,7 +174,6 @@ nav .fw-btn {
     animation-iteration-count: 10;
 }
 
-
 @keyframes blinking {
     from { 
         color: wheat;
@@ -184,7 +182,6 @@ nav .fw-btn {
         color: gold;
     }
 }
-
 
 /*-------------------------------------------------------------------------------*/
 
@@ -205,7 +202,6 @@ nav .fw-btn {
     box-shadow: 0 8px 2px -2px gray;
 
 }
-
 
 .search-select select{
     background-color: white;
@@ -252,12 +248,10 @@ nav .fw-btn {
     text-shadow:none;
 }
 
-
 /*-------------------------Search-------------DONE--------------------------*/
 
 
 /*------------------------Popular Countries--------------------------*/
-
 .popular_con{
     text-align: center;
     font-size: 300%;
@@ -332,9 +326,7 @@ nav .fw-btn {
     background-size: 100% 100%;
 }
 
-
 /*------------------------Popular Countries--Done------------------------*/
-
 .pop_rec{
     background-color: #374b5f;
     display: block;;
@@ -389,10 +381,6 @@ nav .fw-btn {
     background-size: 100% 100%;
 }
 
-
-
-
-
 /*---------Start-footerbar---------*/
 footer {
     width: 100%;
@@ -401,7 +389,6 @@ footer {
     align-items: center;
     background-color:#2c3e50;
     color: white;
-
 }
 
 .fw-footer a{
@@ -419,5 +406,4 @@ footer {
     width: 1.5em;
     height: 1.5em;
 }
-
 /*---------End-footbar---------*/

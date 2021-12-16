@@ -12,7 +12,6 @@ body {
     font-family: sans-serif;
 }
 
-
 /* ----------------------------------- */
 main {
     display: flex;
@@ -44,7 +43,6 @@ header a {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 #logo {
     width: 82px;
@@ -97,7 +95,6 @@ header a {
     padding: 10px;
     border-bottom: 3px solid #c7c7c7;
     background-color: #087593;
-
 }
 
 nav .fw-btn {
@@ -121,7 +118,6 @@ nav .fw-btn {
         border-bottom: 4px solid white;
 }
 /* ------------footer----------------------- */
-
 
 footer {
     width: 100%;
@@ -149,7 +145,6 @@ footer {
 }
 
 /* ------------footer--end--------------------- */
-
 .title {
     display: flex;
     justify-content: center;
@@ -177,7 +172,6 @@ footer {
     width: 100%;
 }
 /* ------------recpie info----------------------- */
-
 .fw-recpie-info{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -216,12 +210,10 @@ footer {
     text-shadow: 10px 10px 10px black;
 }
 
-
 .fw-recpie-ingredients{
     grid-row: 2/3;
     grid-column: 2;
 }
-
 
 .fw-recpie-ingredients ul{
     font-size: x-large;

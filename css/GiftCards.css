@@ -28,7 +28,6 @@ main {
     padding: 15px;
 }
 
-
 nav {
     width: 100%;
     display: flex;
@@ -53,7 +52,6 @@ header a {
     cursor: pointer;
 }
 
-
 #logo {
     width: 82px;
 }
@@ -71,8 +69,6 @@ header a {
     animation-iteration-count: 10;
 }
 
-
-
 @keyframes blinking {
     from { 
         color: wheat;
@@ -81,7 +77,6 @@ header a {
         color: gold;
     }
 }
-
 /* ------------------- HEADER & TOP NAVIGATION ---------*/
 .fw-header {
     width: 100%;
@@ -168,7 +163,6 @@ nav .fw-btn {
     width: 170px;
 }
   
-
 .fw-giftcards-container {
     width: 1024px;
     display: flex;
@@ -176,7 +170,6 @@ nav .fw-btn {
     justify-content: space-around;
     padding: 20px;
 }
-
 
 #foodcard:hover{
     box-shadow: 6px 4px 12px 4px rgba(0,0,0,0.2);
@@ -189,7 +182,6 @@ nav .fw-btn {
     flex-grow: 1;
     padding: 15px;
 }
-
 
 footer {
     width: 100%;
