@@ -294,7 +294,6 @@ nav .fw-btn {
 
 
 .goal {
-    
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -313,8 +312,6 @@ nav .fw-btn {
 
 
 .goal ul{
-    
-    
     display: inline-flex;
     list-style: none;
     align-self: center;
@@ -333,7 +330,6 @@ nav .fw-btn {
 
 
 .goal li img {
-
     width: 100px;
     height: 100px;
     margin: 50px;
