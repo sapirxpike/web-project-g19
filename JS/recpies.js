@@ -7,8 +7,6 @@ india: { name: "chutney", ingredients: ["2 cups fresh cilantro","stems","2 green
 
 };
 
-
-
 let url = new URL(window.location.href);
 let country = url.searchParams.get("country");
 
@@ -23,19 +21,14 @@ function getIngredients(recpie){
     });
 }
 
-
 function getRecpies() {
     let recpie = recpies[country];
     let titleElm = document.getElementById("fw-recpie-title");
     titleElm.innerHTML = recpie.name;
     getIngredients(recpie)
-   
-    
 }
 
 getRecpies()
-
-
 
 function getRecpieImg(){
     let source = recpies[country].srcImg;
@@ -45,7 +38,6 @@ function getRecpieImg(){
 }
 
 getRecpieImg()
-
 
 function done(){ //this function will get the data the review of the user and store it the db
     let recommendations = JSON.parse(window.localStorage.getItem("recommendations") || "[]");

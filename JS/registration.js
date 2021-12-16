@@ -55,6 +55,5 @@ $(function(){
 					number: " Only numbers allowed"
 				},
 			}
-			
 	});
 });
